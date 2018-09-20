@@ -1,0 +1,79 @@
+
+body {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* For navigation bar*/
+.nav {
+    background-color: #4E9EED;
+    color:#ffffff;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px 0 20px 0;
+    margin: 0;  
+}
+
+.nav > li {
+    line-height: 40px;
+    display: inline-block;
+}
+
+.nav > li > a {
+    text-decoration: none;
+    color: #ffffff; 
+    padding: 32px 25px;
+    padding-right: 20px;
+
+}
+
+.nav > li > a:hover {
+    background-color: rgb(100, 89, 89);
+}
+
+.nav > li > a:active {
+    background-color: rgb(67, 176, 184);
+}
+
+.nav .logo {
+    float: left;
+    padding-left:60px;
+    font-size: 1.4em;
+    line-height: 40px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Giant image under the nav bar (HOME page)*/
+
+#image{
+    background-position: center-right;
+    min-height: 350px; 
+    margin-bottom: 30px;
+    background-image: url('../static/corrugated-decor-decoration-933149.jpg') 
+}
+
+/* For making grids in the website (HOME PAGE) */
+
+.grid {
+    display: grid;
+    grid-column-gap: 0;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-auto-rows: minmax(400px,auto);
+    grid-gap : 1em;
+     
+}
+
+.grid > div {
+    background: rgb(204, 221, 220);
+    padding: 1em;
+
+} 
+
+/* For the footer to be positioned at the bottom*/
+#main-footer {
+    position: absolute;
+    bottom: 10px;
+}
