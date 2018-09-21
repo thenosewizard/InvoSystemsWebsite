@@ -15,9 +15,6 @@
     <!--Main css for the website-->
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'main.css')}}">
     
-    <!-- Scripts to run the page-->
-    <link rel="stylesheet" type="text/js" href="{{url_for('static', filename = 'main.js')}}">
-
 
 </head>
 <body>
@@ -39,6 +36,9 @@
     {%block content%}{%endblock%}
 
     <!--Copyright-->
-    <footer id="main-footer">Copyright &copy; 2018 Invosystems</footer>
+    <!-- <footer id="main-footer">Copyright &copy; 2018 Invosystems</footer> -->
+
+    <!--Script to run JS in the webpage-->
+    <script src="{{url_for('static', filename = 'main.js')}}""></script>
 </body>
 </html>
