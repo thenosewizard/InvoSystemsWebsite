@@ -67,6 +67,7 @@ body {
     grid-template-rows: 120px;
     grid-auto-rows: minmax(400px,auto);
     grid-gap : 3px;
+    background: rgb(10, 79, 148);
      
 }
 
@@ -102,13 +103,18 @@ body {
 .home-titles {
     text-align: center;
     font-style: italic;
+    font-weight: bold;
 }
 
 /* For the footer to be positioned at the bottom*/
-#main-footer {
-    position: static;
-    bottom: 0px;
-    margin-top: 10px;
+.main-footer {
+    position: absolute;
+    color: #ffffff;
+    height: 20px;
+    background-color: #38393b91;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 

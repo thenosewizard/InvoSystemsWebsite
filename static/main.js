@@ -1,2 +1,3 @@
-/* Javascript for a slideshow*/
+// For webpage transitions
+
 
