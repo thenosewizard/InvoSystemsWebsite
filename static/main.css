@@ -71,8 +71,11 @@ body {
 }
 
 .grid > div {
-    background-color: #59bfd1c4;
+    background-color: #4E9EED;
     padding: 2em;
+    color: #ffffff;
+    line-height: 1.4em;
+    text-align: left;
     border: 1px solid black;
     margin-bottom: 10%;
 } 
@@ -85,9 +88,21 @@ body {
     text-align: center;
     color: #ffffff;
     line-height: 50%;
+    border: none;
 }
 
+.grid .inner-grid {
+    display: grid;
+    grid-gap: 3px;
+    background-color: #1a59e091;
+    border: 2px solid black; 
+}
 
+/* For the things invosystems specilises in (TITLES) */
+.home-titles {
+    text-align: center;
+    font-style: italic;
+}
 
 /* For the footer to be positioned at the bottom*/
 #main-footer {
