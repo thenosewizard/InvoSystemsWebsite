@@ -51,12 +51,46 @@ body {
 
 /* Giant image under the nav bar (HOME page)*/
 
-.image{
-    background-position: center-right;
+.image {
+    background-position: center;
     min-height: 500px; 
-    margin-bottom: 30px;
-    background-color: rgb(#1882ac91); 
     /* background-image: url('../static/corrugated-decor-decoration-933149.jpg') */
+}
+
+#imageChange {
+    background-position: center;
+    height: 70%;
+    width: 100%;
+    
+}
+
+
+/* Buttons for the slideshow */
+
+.pictureButtons {
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    border-style: solid;
+    top: 30%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+}
+
+#left-button {
+    border-width: 30px 40px 30px 0;
+    left: 0;
+    border-color: transparent #ffffff transparent transparent;
+    margin-left: 20px;
+    
+}
+
+#right-button {
+    border-width: 30px 0 30px 40px;
+    right: 0;
+    margin-right: 20px;
+    border-color: transparent transparent transparent #ffffff;  
 }
 
 /* For making grids in the website (HOME PAGE) */
@@ -82,7 +116,8 @@ body {
 } 
 
  .grid .head {
-    background-color: #4E9EED; 
+    background-color: #4E9EED;
+    border: 3px solid black; 
     grid-column: 1/-1;
     margin-bottom: 1%; 
     align-items: start;
