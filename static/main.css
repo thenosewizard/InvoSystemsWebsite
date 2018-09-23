@@ -51,7 +51,7 @@ body {
 
 /* Giant image under the nav bar (HOME page)*/
 
-#image{
+.image{
     background-position: center-right;
     min-height: 500px; 
     margin-bottom: 30px;
