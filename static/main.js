@@ -3,6 +3,9 @@
 let  i = 0;
 const time = 3000;
 let image = [];
+let text = ["Invosystems Solutions - Singapore", "Invodata Systems Technologies - Malaysia"];
+
+// Images to appear on the home page
 
 image[0] = '..\\static\\casey-allen-276030-unsplash.jpg';
 image[1] = '..\\static\\loic-mermilliod-224470-unsplash.jpg';
@@ -11,6 +14,7 @@ image[1] = '..\\static\\loic-mermilliod-224470-unsplash.jpg';
 
 function imgChanger() {
     document.picture.src = image[i]
+    document.getElementById("content").innerHTML = text[i];
 
     if (i < image.length - 1) {
         i++;
@@ -22,7 +26,8 @@ function imgChanger() {
     setTimeout("imgChanger()", time);
 }
 
-window.onload = imgChanger;
 
+
+window.onload = imgChanger;
 // variables needed
 

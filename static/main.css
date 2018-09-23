@@ -57,6 +57,17 @@ body {
     /* background-image: url('../static/corrugated-decor-decoration-933149.jpg') */
 }
 
+/* Content for the image*/
+#content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    color: #ffffff;
+    text-align: 40%;
+    font-size: 50px; 
+}
+
 #imageChange {
     background-position: center;
     height: 70%;
@@ -139,7 +150,6 @@ body {
 /* For the things invosystems specilises in (TITLES) */
 .home-titles {
     text-align: center;
-    font-style: italic;
     font-weight: bold;
 }
 
