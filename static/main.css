@@ -65,7 +65,7 @@ body {
 }
 
 
-/* Buttons for the slideshow */
+/* Buttons for the slideshow 
 
 .pictureButtons {
     cursor: pointer;
@@ -92,6 +92,8 @@ body {
     margin-right: 20px;
     border-color: transparent transparent transparent #ffffff;  
 }
+
+*/
 
 /* For making grids in the website (HOME PAGE) */
 
