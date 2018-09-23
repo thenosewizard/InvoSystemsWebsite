@@ -26,14 +26,3 @@ window.onload = imgChanger;
 
 // variables needed
 
-leftButton = document.getElementById("#left-button")
-rightButton = document.getElementById("#right-button")
-
-picture_change_left = leftButton.addEventListener("click", arrow);
-picture_change_right = rightButton.addEventListener("click", arrow);
-
-// function to switch images on the click
-function arrow () {
-    
-}
-
