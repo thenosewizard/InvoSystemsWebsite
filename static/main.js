@@ -1,35 +1,36 @@
 // slideshow transitions for (HOME PAGE)
 
 let  i = 0;
-const time = 3000;
-let image = [];
-
-// Text to appear on the images on the home page
-let text = ["Invosystems Solutions - Singapore", "Invodata Systems Technologies - Malaysia"];
-
-// Images to appear on the home page
-
-image[0] = '..\\static\\casey-allen-276030-unsplash.jpg';
-image[1] = '..\\static\\loic-mermilliod-224470-unsplash.jpg';
-
+let f = 0;
 // function to go through the images
 
 function imgChanger() {
+    let image = ['..\\static\\casey-allen-276030-unsplash.jpg', '..\\static\\loic-mermilliod-224470-unsplash.jpg'];
     document.picture.src = image[i]
-    document.getElementById("content").innerHTML = text[i];
 
     if (i < image.length - 1) {
         i++;
     } else {
         i = 0;
     }
-
     // time to switch between the images
-    setTimeout("imgChanger()", time);
+    setTimeout("imgChanger()", 3000);
 }
 
+function textChanger() {
+    let text = ["Invosystems Solutions - Singapore", "Invodata Systems Technologies - Malaysia"];
+    document.getElementById("content").innerHTML = text[f]
+    
+    if (f < text.length - 1) {
+        f++;
+    } else {
+        f = 0;
+    }
 
+    setTimeout("textChanger()", 2000);
+}
 
-window.onload = imgChanger;
-// variables needed
+// Event listeners
+document.addEventListener("DOMContentLoaded", imgChanger);
+document.addEventListener("DOMContentLoaded", textChanger);
 
