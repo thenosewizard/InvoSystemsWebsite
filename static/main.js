@@ -1,8 +1,8 @@
 // slideshow transitions for (HOME PAGE)
 
-let  i = 0;
-let f = 0;
 // function to go through the images
+let  i = 0;
+document.addEventListener("DOMContentLoaded", imgChanger);
 
 function imgChanger() {
     let image = ['..\\static\\casey-allen-276030-unsplash.jpg', '..\\static\\loic-mermilliod-224470-unsplash.jpg'];
@@ -13,12 +13,16 @@ function imgChanger() {
     } else {
         i = 0;
     }
-    // time to switch between the images
+
     setTimeout("imgChanger()", 3000);
 }
 
+// function that loops through text
+let f = 0;
+document.addEventListener("DOMContentLoaded", textChanger);
+
 function textChanger() {
-    let text = ["Invosystems Solutions - Singapore", "Invodata Systems Technologies - Malaysia"];
+    let text = ["Welcome to InvoSystems","Invosystems Solutions - Singapore", "Invodata Systems Technologies - Malaysia"];
     document.getElementById("content").innerHTML = text[f]
     
     if (f < text.length - 1) {
@@ -27,10 +31,10 @@ function textChanger() {
         f = 0;
     }
 
-    setTimeout("textChanger()", 2000);
+    setTimeout("textChanger()", 3000);
 }
 
-// Event listeners
-document.addEventListener("DOMContentLoaded", imgChanger);
-document.addEventListener("DOMContentLoaded", textChanger);
+
+
+
 
