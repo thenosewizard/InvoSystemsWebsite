@@ -111,12 +111,10 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 8fr;
     grid-template-rows: 120px;
     grid-auto-rows: minmax(400px,auto);
-    grid-gap : 3px;
-    background: rgb(10, 79, 148);
-     
+    grid-gap : 3px;  
 }
 
 .grid > div {
@@ -133,7 +131,7 @@ body {
     background-color: #4E9EED;
     border: 3px solid black; 
     grid-column: 1/-1;
-    margin-bottom: 1%; 
+    margin-bottom: 0%; 
     align-items: start;
     text-align: center;
     color: #ffffff;
@@ -146,6 +144,50 @@ body {
     grid-gap: 3px;
     background-color: #1a59e091;
     border: 2px solid black; 
+}
+
+/* Under the grid for content (HOME PAGE)*/
+
+.specialise {
+    display: grid;
+    height: 500px;
+    background-color: #1F487E;
+    color: #ffffff;
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-columns: 3fr 7fr; 
+}   
+
+#sTitle {
+    text-align: center;
+    line-height: 330px;
+}
+
+#sContent {
+    text-align: left;
+    margin-top: 70px;
+    margin-right: 10%; 
+    
+}
+
+/* Buttons to swipe through content */
+.button {
+    display: inline-block;
+    top: 80%;
+    position: absolute;
+    border-style: solid;
+    cursor: pointer;
+}
+
+#button-right {
+    right: 20px;
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #ffffff;  
+}
+
+#button-left {
+    left: 20px;
+    border-color: transparent #ffffff transparent transparent;
+    border-width: 30px 40px 30px 0;
 }
 
 /* For the things invosystems specilises in (TITLES) */
