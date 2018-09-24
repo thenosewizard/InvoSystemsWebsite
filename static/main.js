@@ -3,6 +3,8 @@
 let  i = 0;
 const time = 3000;
 let image = [];
+
+// Text to appear on the images on the home page
 let text = ["Invosystems Solutions - Singapore", "Invodata Systems Technologies - Malaysia"];
 
 // Images to appear on the home page
