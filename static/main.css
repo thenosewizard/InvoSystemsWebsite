@@ -65,15 +65,42 @@ body {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -200%);
-    color: #ffffff;
-    font-size: 50px; 
+    font-size: 50px;
+    animation-name: changeText;
+    animation-duration: 3s;
+    animation-fill-mode: both;  
+     
 }
+
+@keyframes changeText {
+    from {
+        color: black;
+    }
+
+    to {
+        color: #ffffff;
+    }
+}
+
 
 #imageChange {
     background-position: center;
+    filter: brightness(50%) blur(1px); 
     height: 82%;
     width: 100%;
-    
+    animation-name: change;
+    animation-duration: 3s;
+    animation-fill-mode: both;  
+}
+
+@keyframes change {
+    from {
+        filter: brightness(10%);
+    }
+
+    to {
+        filter: brightness(50%);
+    }
 }
 
 /* For making grids in the website (HOME PAGE) */
@@ -157,12 +184,6 @@ body {
     left: 20px;
     border-color: transparent #ffffff transparent transparent;
     border-width: 30px 40px 30px 0;
-}
-
-/* For the things invosystems specilises in (TITLES) */
-.home-titles {
-    text-align: center;
-    font-weight: bold;
 }
 
 /* For the footer to be positioned at the bottom*/
