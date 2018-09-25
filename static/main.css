@@ -184,6 +184,10 @@ body {
     border-color: transparent transparent transparent #ffffff;  
 }
 
+.buttonMax {
+    border-color: transparent transparent transparent #b41d1d; 
+}
+
 #button-left {
     left: 20px;
     border-color: transparent #ffffff transparent transparent;

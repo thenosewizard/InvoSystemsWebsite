@@ -35,13 +35,9 @@ function textChanger() {
 }
 
 // Changes content of text in the home page
-
 let j = 0;
-
-function textTitleContent () {
-    let titles = ["Consulting" , "Products" , "eLearning & eTraining", "IoT & Analytics", "Blockchain"];
-
-    let paragraphs = [
+let titles = ["Consulting" , "Products" , "eLearning & eTraining", "IoT & Analytics", "Blockchain"];
+let paragraphs = [
 
     "InvoSystems provides consulting, products, solutions, implementation and services related to Big Data, IoT, \
     Analytics, eLearning, Blockchain, Digital Transformation,  Information Search, Structured Knowledgebase,  eFAQ  and eServices Delivery support",
@@ -60,16 +56,37 @@ function textTitleContent () {
     
     ]
 
-    title = document.getElementById("titleContent");
-    title = title.innerHTML =titles[j]
 
-    para = document.getElementById("paraContent");
-    para = para.innerHTML = paragraphs[j]
+let title = document.getElementById("titleContent");
+let para = document.getElementById("paraContent");
 
+// Right button
+function rightButton () {
     if (j < titles.length - 1) {
         j++;
-    } else {
-        j = 0;
+        title.innerHTML = titles[j];
+        para.innerHTML = paragraphs[j];
+        document.getElementById("button-right").style.borderColor = "transparent transparent transparent #ffffff";
+        document.getElementById("button-left").style.borderColor = "transparent #ffffff transparent transparent";
+    }  else {
+        title.innerHTML = titles[titles.length-1];
+        para.innerHTML = paragraphs[paragraphs.length-1]
+        document.getElementById("button-right").style.borderColor = "transparent transparent transparent #b41d1d";
+    }
+}
+
+//left button
+function leftButton () {
+    if (j > 0 && j <= titles.length - 1) {
+        j--;
+        title.innerHTML = titles[j];
+        para.innerHTML = paragraphs[j];
+        document.getElementById("button-left").style.borderColor = "transparent #ffffff transparent transparent";
+        document.getElementById("button-right").style.borderColor = "transparent transparent transparent #ffffff";
+    } else if (j < 0 || j == 0) {
+        title.innerHTML = titles[0];
+        para.innerHTML = paragraphs[0]
+        document.getElementById("button-left").style.borderColor = "transparent #b41d1d transparent transparent";
     }
 }
 
