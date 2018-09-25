@@ -59,7 +59,11 @@ let paragraphs = [
     
     ]
 
+let pictureImages = [];
 
+
+// Getting the id of which we would like the content to be changed when the user clicks on a button
+let picture = document.getElementById("pictureContent")
 let title = document.getElementById("titleContent");
 let para = document.getElementById("paraContent");
 

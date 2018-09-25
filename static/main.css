@@ -72,6 +72,7 @@ body {
      
 }
 
+/* animation for the content in the image */
 @keyframes changeText {
     from {
         color: black;
@@ -93,9 +94,10 @@ body {
     animation-fill-mode: both;  
 }
 
+/* animation for the image in the webpage(HOME) */
 @keyframes change {
     from {
-        filter: brightness(10%);
+        filter: brightness(100%);
     }
 
     to {
@@ -150,7 +152,7 @@ body {
     background-color: #1F487E;
     color: #ffffff;
     grid-auto-rows: minmax(300px, auto);
-    grid-template-columns: 3fr 7fr; 
+    grid-template-columns: 3fr 3.5fr 3.5fr; 
 }   
 
 #sTitle {
@@ -158,10 +160,16 @@ body {
     line-height: 330px;
 }
 
+#pictureContent {
+    vertical-align: 50%;
+    background-position: center; 
+}
+
+
 #sContent {
     text-align: left;
-    margin-top: 70px;
-    margin-right: 10%; 
+    margin-top: 12%;   
+    margin-right: 12%; 
     
 }
 
