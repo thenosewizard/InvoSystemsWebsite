@@ -71,48 +71,17 @@ body {
 
 #imageChange {
     background-position: center;
-    height: 70%;
+    height: 82%;
     width: 100%;
     
 }
-
-
-/* Buttons for the slideshow 
-
-.pictureButtons {
-    cursor: pointer;
-    position: absolute;
-    text-align: center;
-    border-style: solid;
-    top: 30%;
-    margin-top: -50px;
-    width: 0;
-    height: 0;
-}
-
-#left-button {
-    border-width: 30px 40px 30px 0;
-    left: 0;
-    border-color: transparent #ffffff transparent transparent;
-    margin-left: 20px;
-    
-}
-
-#right-button {
-    border-width: 30px 0 30px 40px;
-    right: 0;
-    margin-right: 20px;
-    border-color: transparent transparent transparent #ffffff;  
-}
-
-*/
 
 /* For making grids in the website (HOME PAGE) */
 
 .grid {
     display: grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: 120px;
+    grid-template-rows: 100px;
     grid-auto-rows: minmax(400px,auto);
     grid-gap : 3px;  
 }
@@ -169,7 +138,7 @@ body {
     
 }
 
-/* Buttons to swipe through content */
+/* Buttons to swipe through content below "specilaise" */
 .button {
     display: inline-block;
     top: 80%;
@@ -182,10 +151,6 @@ body {
     right: 20px;
     border-width: 30px 0 30px 40px;
     border-color: transparent transparent transparent #ffffff;  
-}
-
-.buttonMax {
-    border-color: transparent transparent transparent #b41d1d; 
 }
 
 #button-left {

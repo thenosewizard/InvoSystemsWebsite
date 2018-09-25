@@ -1,3 +1,6 @@
+
+// Start of js for (HOME PAGE)
+
 // slideshow transitions for (HOME PAGE)
 
 // function to go through the images
@@ -66,11 +69,15 @@ function rightButton () {
         j++;
         title.innerHTML = titles[j];
         para.innerHTML = paragraphs[j];
+
+        // changes colours of the button
         document.getElementById("button-right").style.borderColor = "transparent transparent transparent #ffffff";
         document.getElementById("button-left").style.borderColor = "transparent #ffffff transparent transparent";
     }  else {
         title.innerHTML = titles[titles.length-1];
         para.innerHTML = paragraphs[paragraphs.length-1]
+
+        // button colour is changed to red if it's reached it max
         document.getElementById("button-right").style.borderColor = "transparent transparent transparent #b41d1d";
     }
 }
@@ -81,13 +88,18 @@ function leftButton () {
         j--;
         title.innerHTML = titles[j];
         para.innerHTML = paragraphs[j];
+
+        // changes colours of the button
         document.getElementById("button-left").style.borderColor = "transparent #ffffff transparent transparent";
         document.getElementById("button-right").style.borderColor = "transparent transparent transparent #ffffff";
-    } else if (j < 0 || j == 0) {
+    } else if (j == 0) {
         title.innerHTML = titles[0];
         para.innerHTML = paragraphs[0]
+
+        // button colour is changed to red if it's reached it max
         document.getElementById("button-left").style.borderColor = "transparent #b41d1d transparent transparent";
     }
 }
 
 
+// end of Js for (HOME PAGE)
