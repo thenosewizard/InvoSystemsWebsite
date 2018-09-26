@@ -75,8 +75,8 @@ function rightButton () {
         para.innerHTML = paragraphs[j];
 
         // changes colours of the button
-        document.getElementById("button-right").style.borderColor = "transparent transparent transparent #ffffff";
-        document.getElementById("button-left").style.borderColor = "transparent #ffffff transparent transparent";
+        document.getElementById("button-right").style.borderColor = "transparent transparent transparent #1e6fe7";
+        document.getElementById("button-left").style.borderColor = "transparent #1e6fe7 transparent transparent";
     }  else {
         title.innerHTML = titles[titles.length-1];
         para.innerHTML = paragraphs[paragraphs.length-1]
@@ -94,8 +94,8 @@ function leftButton () {
         para.innerHTML = paragraphs[j];
 
         // changes colours of the button
-        document.getElementById("button-left").style.borderColor = "transparent #ffffff transparent transparent";
-        document.getElementById("button-right").style.borderColor = "transparent transparent transparent #ffffff";
+        document.getElementById("button-left").style.borderColor = "transparent #1e6fe7 transparent transparent";
+        document.getElementById("button-right").style.borderColor = "transparent transparent transparent #1e6fe7";
     } else if (j == 0) {
         title.innerHTML = titles[0];
         para.innerHTML = paragraphs[0]

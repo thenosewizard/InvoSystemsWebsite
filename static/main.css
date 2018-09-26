@@ -1,4 +1,18 @@
 
+/* For viewing purposes */
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+/* Microsoft IE browsers*/
+@-ms-viewport {
+    width: device-width ;
+    zoom: 1;
+}
+
+/* start of code for the layout page */
+/* Body of the webpage */  
 body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +43,7 @@ body {
     color: #ffffff; 
     padding: 32px 25px;
     padding-right: 20px;
-
+    
 }
 
 .nav > li > a:hover {
@@ -49,6 +63,19 @@ body {
     color: #ffffff;
 }
 
+/* For the footer to be positioned at the bottom*/
+.main-footer {
+    position: absolute;
+    color: #ffffff;
+    height: 20px;
+    background-color: #38393b91;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/* End of code for the layout page */
+
+/* Start of code for the home page */
 /* Giant image under the nav bar (HOME page)*/
 
 .image {
@@ -137,13 +164,6 @@ body {
     border: none;
 }
 
-.grid .inner-grid {
-    display: grid;
-    grid-gap: 3px;
-    background-color: #1a59e091;
-    border: 2px solid black; 
-}
-
 /* Under the grid for content (HOME PAGE)*/
 
 .specialise {
@@ -174,7 +194,6 @@ body {
     text-align: left;
     margin-top: 12%;   
     margin-right: 12%; 
-    
 }
 
 /* Buttons to swipe through content below "specilaise" */
@@ -189,25 +208,18 @@ body {
 #button-right {
     right: 20px;
     border-width: 30px 0 30px 40px;
-    border-color: transparent transparent transparent #ffffff;  
+    border-color: transparent transparent transparent #1e6fe7;  
 }
 
 #button-left {
     left: 20px;
-    border-color: transparent #ffffff transparent transparent;
+    border-color: transparent #1e6fe7 transparent transparent;
     border-width: 30px 40px 30px 0;
 }
+/* End of code for the home page
 
-/* For the footer to be positioned at the bottom*/
-.main-footer {
-    position: absolute;
-    color: #ffffff;
-    height: 20px;
-    background-color: #38393b91;
-    bottom: 0;
-    right: 0;
-    left: 0;
+
+/* For mobile view */
+@media screen {
+    
 }
-
-
-
