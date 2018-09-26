@@ -151,21 +151,22 @@ body {
     height: 500px;
     background-color: #1F487E;
     color: #ffffff;
-    grid-auto-rows: minmax(300px, auto);
-    grid-template-columns: 3fr 3.5fr 3.5fr; 
+    grid-auto-rows: minmax(400px, auto);
+    grid-template-columns: 3.5fr 6.5fr; 
 }   
 
 #sTitle {
     text-align: center;
-    line-height: 330px;
+    line-height: 50px;
+    margin-top: 3.5%; 
 }
 
 /* For the picture that is next to the title */
 #pictureContent {
-    vertical-align: 50%;
-    background-position: center;
-    margin-top: 8.5%;
-    margin-left: 33%; 
+    display: grid;
+    height: 300px;
+    margin-top: 0%;
+    margin-left: 27.5%;  
 }
 
 
