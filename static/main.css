@@ -180,7 +180,7 @@ body {
 
 .specialise {
     display: grid;
-    height: 500px;
+    height: 450px;
     background-color: #1F487E;
     color: #ffffff;
     grid-auto-rows: minmax(400px, auto);
@@ -190,7 +190,7 @@ body {
 #sTitle {
     text-align: center;
     line-height: 50px;
-    margin-top: 3.5%; 
+    margin-top: 2%; 
 }
 
 /* For the picture that is next to the title */
@@ -211,7 +211,7 @@ body {
 /* Buttons to swipe through content below "specilaise" */
 .button {
     display: inline-block;
-    top: 80%;
+    top: 82%;
     position: absolute;
     border-style: solid;
     cursor: pointer;

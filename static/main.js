@@ -37,7 +37,7 @@ function textChanger() {
     setTimeout("textChanger()", 3000);
 }
 
-// Changes content of text in the home page
+// Content of text/images in the home page
 let j = 0;
 let titles = ["Consulting" , "Products" , "eLearning & eTraining", "IoT & Analytics", "Blockchain"];
 let paragraphs = [
@@ -60,7 +60,7 @@ let paragraphs = [
     ]
 let pictureImages = [];
 
-// Navigating through titles
+//titles
 let sNavIdentity = ["conSult", "pro", "eLearn", "Iot", "block"];
 // Sets the first title as white
 document.getElementById(sNavIdentity[0]).style.color = "#ffffff"
@@ -103,7 +103,7 @@ function leftButton () {
 
         // chnages the colours of the title
         document.getElementById(sNavIdentity[j]).style.color = "#ffffff"
-        document.getElementById(sNavIdentity[j+1]).style.color = "#aaa4a4"
+        document.getElementById(sNavIdentity[j+1]).style.color = "#aaa4a4" 
 
         // changes colours of the button
         document.getElementById("button-left").style.borderColor = "transparent #1e6fe7 transparent transparent";
@@ -116,8 +116,4 @@ function leftButton () {
         document.getElementById("button-left").style.borderColor = "transparent #b41d1d transparent transparent";
     }
 }
-
-// Js that lights up on which text they are viewing
-
-
 // end of Js for (HOME PAGE)
