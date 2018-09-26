@@ -58,9 +58,12 @@ let paragraphs = [
      solutioning, Use Cases, BaaS and POC for Blockchain based applications & Services" 
     
     ]
-
 let pictureImages = [];
 
+// Navigating through titles
+let sNavIdentity = ["conSult", "pro", "eLearn", "Iot", "block"];
+// Sets the first title as white
+document.getElementById(sNavIdentity[0]).style.color = "#ffffff"
 
 // Getting the id of which we would like the content to be changed when the user clicks on a button
 let picture = document.getElementById("pictureContent")
@@ -74,9 +77,14 @@ function rightButton () {
         title.innerHTML = titles[j];
         para.innerHTML = paragraphs[j];
 
+        // changes the colours of the titles
+        document.getElementById(sNavIdentity[j-1]).style.color = "#aaa4a4"
+        document.getElementById(sNavIdentity[j]).style.color = "#ffffff"
+
         // changes colours of the button
         document.getElementById("button-right").style.borderColor = "transparent transparent transparent #1e6fe7";
         document.getElementById("button-left").style.borderColor = "transparent #1e6fe7 transparent transparent";
+
     }  else {
         title.innerHTML = titles[titles.length-1];
         para.innerHTML = paragraphs[paragraphs.length-1]
@@ -93,6 +101,10 @@ function leftButton () {
         title.innerHTML = titles[j];
         para.innerHTML = paragraphs[j];
 
+        // chnages the colours of the title
+        document.getElementById(sNavIdentity[j]).style.color = "#ffffff"
+        document.getElementById(sNavIdentity[j+1]).style.color = "#aaa4a4"
+
         // changes colours of the button
         document.getElementById("button-left").style.borderColor = "transparent #1e6fe7 transparent transparent";
         document.getElementById("button-right").style.borderColor = "transparent transparent transparent #1e6fe7";
@@ -104,6 +116,8 @@ function leftButton () {
         document.getElementById("button-left").style.borderColor = "transparent #b41d1d transparent transparent";
     }
 }
+
+// Js that lights up on which text they are viewing
 
 
 // end of Js for (HOME PAGE)

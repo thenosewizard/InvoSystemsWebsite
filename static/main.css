@@ -164,6 +164,18 @@ body {
     border: none;
 }
 
+/* a nav bar for the content there is (HOME PAGE*/
+#sNav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    grid-auto-rows: minmax(0.2%, 0.2%);
+    text-align: center;
+    color: #aaa4a4;
+    background: #242222;
+}
+
 /* Under the grid for content (HOME PAGE)*/
 
 .specialise {
