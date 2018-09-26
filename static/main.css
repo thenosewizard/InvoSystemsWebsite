@@ -160,9 +160,12 @@ body {
     line-height: 330px;
 }
 
+/* For the picture that is next to the title */
 #pictureContent {
     vertical-align: 50%;
-    background-position: center; 
+    background-position: center;
+    margin-top: 8.5%;
+    margin-left: 33%; 
 }
 
 
