@@ -76,14 +76,14 @@ body {
 /* End of code for the layout page */
 
 /* Start of code for the home page */
-/* Giant image under the nav bar (HOME page)*/
-
+/* Giant image under the nav bar (HOME page) */
 .image {
     display: flex;
     align-items: center;
     background-position: center;
     min-height: 500px; 
 }
+
 
 /* Content for the image*/
 .image #content {
@@ -114,7 +114,7 @@ body {
 #imageChange {
     background-position: center;
     filter: brightness(50%) blur(1px); 
-    height: 82%;
+    height: 85%;
     width: 100%;
     animation-name: change;
     animation-duration: 3s;
@@ -137,14 +137,14 @@ body {
 .grid {
     display: grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: 100px;
+    grid-template-rows: 80px;
     grid-auto-rows: minmax(400px,auto);
     grid-gap : 3px;  
 }
 
 .grid > div {
     background-color: #4E9EED;
-    padding: 2em;
+    padding: 1em;
     color: #ffffff;
     line-height: 1.4em;
     text-align: left;
@@ -154,14 +154,26 @@ body {
 
  .grid .head {
     background-color: #4E9EED;
-    border: 3px solid black; 
     grid-column: 1/-1;
     margin-bottom: 0%; 
-    align-items: start;
     text-align: center;
     color: #ffffff;
-    line-height: 50%;
+    line-height: 1%;
     border: none;
+}
+
+.grid .head > span > h1 {
+    cursor: pointer;
+}
+
+#special:hover {
+    cursor: pointer;
+    color: #04124291;
+    font-weight: bold;
+}
+
+#wholeThing {
+    display: none;
 }
 
 /* a nav bar for the content there is (HOME PAGE*/

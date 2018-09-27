@@ -116,4 +116,19 @@ function leftButton () {
         document.getElementById("button-left").style.borderColor = "transparent #b41d1d transparent transparent";
     }
 }
+
+// jquery func to show specilise
+
+
+$(document).ready(function(){
+    $('#special').on('click', function () {
+        $('#wholeThing').toggle(300);
+        $('html, body').animate({
+            scrollTop: $("#paraContent").offset().top
+        },);
+    });
+
+});
+
+
 // end of Js for (HOME PAGE)
