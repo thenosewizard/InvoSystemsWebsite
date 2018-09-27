@@ -245,11 +245,50 @@ body {
 
 /* Start of CSS for bigData page */
 /* Sections in the css page */
+.sections_Data {
+    color: #ffffff;
+    padding: 2em;   
+}
+
+.sections_Data > h1 {
+    color: antiquewhite;
+    font-weight: bold;
+    margin-bottom: 8%;  
+}
 
 #bigDataSection {
     display: grid;
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: minmax(500px, auto);
+    grid-template-columns: 2fr 2fr;
+    margin-left: 6%;
+    margin-right: 6%;
 }
+
+.sectionOne {
+    background: rgb(5, 35, 65);
+}
+
+.sectionTwo{
+    background: rgb(12, 52, 92);
+}
+
+.sectionThree{
+    background: #204174;
+}
+
+.sectionFour {
+    background: #2d5188;
+}
+
+.innerSection , .list{
+    font-size: 1.2em;
+    line-height: 1.7em;
+    text-align: left;
+}
+
+
+
+
 
 /* For mobile view */
 @media screen {
