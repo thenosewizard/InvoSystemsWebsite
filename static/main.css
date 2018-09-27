@@ -18,7 +18,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     position: relative;
-    background-color: #FDFFFC;
+    background-color: #1F487E;
 }
 
 /* For navigation bar (Whole Website)*/
@@ -68,7 +68,7 @@ body {
     position: absolute;
     color: #ffffff;
     height: 20px;
-    background-color: #38393b91;
+    background-color: #38393b91; 
     bottom: 0;
     right: 0;
     left: 0;
@@ -172,6 +172,7 @@ body {
     font-weight: bold;
 }
 
+/* Does not allow the whole div to appear*/
 #wholeThing {
     display: none;
 }
@@ -242,6 +243,13 @@ body {
 }
 /* End of code for the home page
 
+/* Start of CSS for bigData page */
+/* Sections in the css page */
+
+#bigDataSection {
+    display: grid;
+    grid-auto-rows: minmax(300px, auto);
+}
 
 /* For mobile view */
 @media screen {

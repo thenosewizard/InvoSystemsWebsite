@@ -117,18 +117,14 @@ function leftButton () {
     }
 }
 
-// jquery func to show specilise
-
-
+// jquery func that scrolls and shows the content under "Specialise"
 $(document).ready(function(){
     $('#special').on('click', function () {
-        $('#wholeThing').toggle(300);
-        $('html, body').animate({
-            scrollTop: $("#paraContent").offset().top
-        },);
+        $('#wholeThing').toggle(300);           // Toggles content
+        $('html, body').animate({               
+            scrollTop: $("#paraContent").offset().top   // Scrolls towards desired postion for user to view and interact with
+        },500);
     });
-
 });
-
 
 // end of Js for (HOME PAGE)
