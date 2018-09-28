@@ -244,6 +244,7 @@ body {
 /* End of code for the home page
 
 /* Start of CSS for bigData page */
+
 /* Sections in the css page */
 .sections_Data {
     color: #ffffff;
@@ -257,11 +258,9 @@ body {
 }
 
 /* The entire section of the bigdata page */
-
 #wholeSection {
     display: none;
 }
-
 
 #bigDataSection {
     display: grid;
@@ -294,9 +293,43 @@ body {
 }
 
 
+/*contact us */
 
+#contact {
+    display: grid;
+    grid-auto-rows: 4fr;
+    margin-left:6%;
+    margin-right: 6%;
+    text-align: center;
+    grid-auto-rows:minmax(80px,auto);
+    color: #ffffff;
+    background: #242222 ;
+}
 
+#contactbtn {
+    background: #204174;
+    border-radius: 12px;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    filter: brightness(70%);
+}
 
+#contactbtn:active {
+    filter: brightness(100%);
+    transform: translateY(4px);
+}
+
+/* Button to scroll to the top*/
+#scrollTop {
+    float: right;
+    margin-right: 3%;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    background: #43886691;
+
+}
 /* For mobile view */
 @media screen {
     
