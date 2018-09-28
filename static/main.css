@@ -307,21 +307,22 @@ body {
 }
 
 #contactbtn {
+    color: #ffffff;
     background: #204174;
-    border-radius: 12px;
     font-size: 1.1em;
     border: none;
     cursor: pointer;
-    filter: brightness(70%);
+    filter: brightness(100%);
 }
 
 #contactbtn:active {
-    filter: brightness(100%);
     transform: translateY(4px);
+    filter: brightness(70%);
 }
 
 /* Button to scroll to the top*/
 #scrollTop {
+    color: #ffffff;
     float: right;
     margin-right: 3%;
     border: none;
