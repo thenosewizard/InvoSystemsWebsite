@@ -1,8 +1,6 @@
 
-// Start of js for (HOME PAGE)
 
 // slideshow transitions for (HOME PAGE)
-
 // function to go through the images
 let  i = 0;
 document.addEventListener("DOMContentLoaded", imgChanger);
@@ -124,7 +122,5 @@ $(document).ready(function(){
         $('html, body').animate({               
             scrollTop: $("#paraContent").offset().top   // Scrolls towards desired postion for user to view and interact with
         },500);
-    });
+    }); 
 });
-
-// end of Js for (HOME PAGE)

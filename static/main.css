@@ -256,6 +256,13 @@ body {
     margin-bottom: 8%;  
 }
 
+/* The entire section of the bigdata page */
+
+#wholeSection {
+    display: none;
+}
+
+
 #bigDataSection {
     display: grid;
     grid-auto-rows: minmax(500px, auto);
