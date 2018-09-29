@@ -357,7 +357,7 @@ body {
 
 /* start of css for aboutUs page */
 #wholeAbout {
-    
+    display: none;
 }
 
 #aboutWhole {
@@ -369,6 +369,7 @@ body {
     color: #ffffff;
 }
 
+/* Text in the about page */
 .textClass {
     text-align: center;
     font-size: 3em;
@@ -384,8 +385,26 @@ body {
     transition-duration: 0.2s;     
 }
 
+.textClass:active {
+    color: #aaa4a4;
+}
+
+.innerAbout {
+    padding: 5%;
+    cursor: pointer;
+}
+
+/* Sections in the about page */
 #aboutOne {
     background: rgb(5, 35, 65);
+}
+
+#textOne {
+    font-size: 1em;
+    margin-top: 25%;
+    line-height: 1.7em;
+    text-align: left;
+    display: none;
 }
 
 #aboutTwo {
