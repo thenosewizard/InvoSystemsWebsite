@@ -1,10 +1,33 @@
 {%extends "layout.html"%}
 
+<!--Content for this webpage-->
 {%block content%}
 
+<div id="wholeAbout">
+    <div id="aboutWhole">
+
+        <div id="aboutOne">
+           <h1 class="textClass">Management</h1>
+        </div>
+
+        <div id="aboutTwo">
+            <h1 class="textClass">Business Model</h1>
+        </div>
+
+        <div id="aboutThree">
+            <h1 class="textClass">About InvoSystems</h1>
+        </div>
+
+        <div id="aboutFour">
+            <h1 class="textClass">Contact Us</h1>
+        </div>
+
+    </div>
+</div>
 {%endblock content%}
 
 
+<!--Script used for this webpage-->
 {%block script%}
-
+<script src="{{url_for('static', filename = 'aboutUs.js')}}""></script>
 {%endblock script%}
