@@ -58,7 +58,7 @@ of  more than 3 decades of experience in APAC covering from Korea to Australia.\
             1 North Bridge Road, Singapore 179094 </li> <br> \
             <li>Invodata Systems Technologies Sdn Bhd <br>\
             No 3, Kelana Center Point, Malaysia 47301 </li> <br>\
-            <li> To setup meetings or information request, <br> please email ancilla@invosystems.com </li> \
+            <li> To setup meetings or information request, <br> <strong> please email ancilla@invosystems.com </strong> </li> \
             </ul> "     
         ];
 
