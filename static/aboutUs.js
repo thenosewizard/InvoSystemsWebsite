@@ -20,6 +20,7 @@ function titleOnClick () {
     }
 
 }
-
 title1.addEventListener("click", titleOnClick);
 text1.addEventListener("click", titleOnClick);
+
+
