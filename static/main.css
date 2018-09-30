@@ -363,13 +363,13 @@ body {
 #aboutWhole {
     display: grid;
     grid-template-columns: 3fr 3fr;
-    grid-auto-rows: minmax(500px,auto);
+    grid-auto-rows: minmax(550px,550px);
     margin-left: 6%;
     margin-right: 6%;
     color: #ffffff;
 }
 
-/* Text in the about page */
+/* For text heading in the about page */
 .textClass {
     text-align: center;
     font-size: 3em;
@@ -389,22 +389,20 @@ body {
     color: #aaa4a4;
 }
 
+/* for text in the box */
 .innerAbout {
     padding: 5%;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 25%;
+    line-height: 1.7em;
+    text-align: left;
     cursor: pointer;
 }
 
 /* Sections in the about page */
 #aboutOne {
     background: rgb(5, 35, 65);
-}
-
-#textOne {
-    font-size: 1em;
-    margin-top: 25%;
-    line-height: 1.7em;
-    text-align: left;
-    display: none;
 }
 
 #aboutTwo {
