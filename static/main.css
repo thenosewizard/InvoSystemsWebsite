@@ -355,67 +355,6 @@ body {
 
 }
 
-/* start of css for aboutUs page */
-#wholeAbout {
-    display: none;
-}
-
-#aboutWhole {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    grid-auto-rows: minmax(550px,550px);
-    margin-left: 6%;
-    margin-right: 6%;
-    color: #ffffff;
-}
-
-/* For text heading in the about page */
-.textClass {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 25%;
-    cursor: pointer;
-    transition-timing-function: ease-in-out;
-
-}
-
-.textClass:hover {
-    font-size: 3.3em;
-    font-weight: bold;
-    transition-duration: 0.2s;     
-}
-
-.textClass:active {
-    color: #aaa4a4;
-}
-
-/* for text in the box */
-.innerAbout {
-    padding: 5%;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-top: 25%;
-    line-height: 1.7em;
-    text-align: left;
-    cursor: pointer;
-}
-
-/* Sections in the about page */
-#aboutOne {
-    background: rgb(5, 35, 65);
-}
-
-#aboutTwo {
-    background: rgb(12, 52, 92);
-}
-
-#aboutThree {
-    background: #204174;
-}
-
-#aboutFour {
-    background: #2d5188;
-}
 
 /* For mobile view */
 @media screen {
