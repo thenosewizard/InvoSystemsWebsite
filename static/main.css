@@ -344,7 +344,7 @@ body {
 }
 
 /* Button to scroll to the top*/
-#scrollTop {
+#scrollTop , #scrollTopAbout{
     color: #ffffff;
     float: right;
     margin-right: 3%;
@@ -355,6 +355,83 @@ body {
 
 }
 
+/* start of css for aboutUs page */
+#wholeAbout {
+    display: none;
+}
+
+#aboutWhole {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-auto-rows: minmax(500px,auto);
+    margin-left: 6%;
+    margin-right: 6%;
+    color: #ffffff;
+}
+
+/* For text heading in the about page */
+.textClass {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 17%;
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+
+}
+
+.textClass:hover {
+    font-size: 3.3em;
+    font-weight: bold;
+    transition-duration: 0.2s;     
+}
+
+.textClass:active {
+    color: #aaa4a4;
+}
+
+/* for text in the box */
+.innerAbout {
+    margin-left:3%;
+    margin-right: 3%;  
+    padding: 1%;
+    font-size: 1.2em;
+    line-height: 1.7em;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Sections in the about page */
+#aboutOne {
+    background: rgb(5, 35, 65);
+}
+
+#aboutTwo {
+    background: rgb(12, 52, 92);
+}
+
+#aboutThree {
+    background: #204174;
+}
+
+#aboutFour {
+    background: #2d5188;
+}
+
+#textFour {
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* feedback button the website */
+#feedBack {
+    color: #ffffff;
+    background: #204174;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    filter: brightness(100%);
+}
 
 /* For mobile view */
 @media screen {
