@@ -396,12 +396,17 @@ body {
 #projectDisplay > h1 {
     overflow: hidden;
     text-align: center;
-    font-size: 2em;
-    animation: typer 5s steps(50, end),
-               line .75s step-end infinite;
+    font-size: 4em;
+    animation: typer 5s steps(50, end);
     margin: 12% auto;
     white-space: nowrap;
-    border-right: .15em solid orange;
+}
+
+#line {
+    animation: blink .75s step-end infinite;
+    color: red;
+    font-size: 0.8em; 
+    
 }
 
 @keyframes typer {
@@ -414,9 +419,9 @@ body {
     }
 }
 
- @keyframes line {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+ @keyframes blink {
+    from, to { color: transparent }
+    50% { color: red; }
 }
 
 
