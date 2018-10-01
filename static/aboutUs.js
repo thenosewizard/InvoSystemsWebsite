@@ -119,6 +119,7 @@ texts[2].addEventListener('click', titleOnClick2);
 titles[3].addEventListener('click', titleOnClick3);
 texts[3].addEventListener('click', titleOnClick3);
 
+// Scroll towards the top of the page func
 $(document).ready( function () {
     $('#scrollTopAbout').on('click', function () {
         $('html, body').animate({               
