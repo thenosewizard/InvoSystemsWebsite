@@ -349,7 +349,7 @@ body {
 }
 
 /* Button to scroll to the top */
-#scrollTop , #scrollTopAbout, #scrollTopService{
+#scrollTop , #scrollTopAbout, #scrollTopService, #scrollTopProj{
     color: #ffffff;
     float: right;
     margin-right: 3%;
@@ -369,6 +369,85 @@ body {
 }
 
 
+/* start of css for Projects page */
+
+
+
+#projectSection {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 500px; 
+    grid-auto-rows:minmax(500px,auto);
+    margin-left: 6%;
+    margin-right: 6%;
+    color: #ffffff;
+
+}
+
+/* slide show display */
+#projectDisplay {
+    background: #242222;
+    grid-column: 1/-1;
+    border: 2px solid white;
+}
+
+
+
+#projectDisplay > h1 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 2em;
+    animation: typer 5s steps(50, end),
+               line .75s step-end infinite;
+    margin: 12% auto;
+    white-space: nowrap;
+    border-right: .15em solid orange;
+}
+
+@keyframes typer {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+ @keyframes line {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+
+.subTitle {
+    text-align: center;
+}
+
+/* Projects below the display */
+
+#tech {
+    background: #225dca;
+}
+
+#BFSI {
+    background: #863d3d;
+}
+
+#teleCom {
+    background: #183627;
+}
+
+#sports {
+    background: #173b70;
+}
+
+.textProjects {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 12%;
+}
+
 /* start of css for aboutUs page */
 #wholeAbout {
     display: none;
@@ -387,7 +466,6 @@ body {
 .textClass {
     color:antiquewhite;
     text-align: center;
-    font-size: 3em;
     margin-top: 17%;
     cursor: pointer;
     transition-timing-function: ease-in-out;
@@ -395,7 +473,7 @@ body {
 }
 
 .textClass:hover {
-    font-size: 3.3em;
+    font-size: 3em;
     font-weight: bold;
     transition-duration: 0.2s;     
 }

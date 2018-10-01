@@ -1,1 +1,50 @@
 {%extends "layout.html"%}
+
+
+{%block content%}
+
+<!--Change to "wholeSection" later-->
+<div id="wholeSection">
+    <div id="projectSection">
+        <div id="projectDisplay">
+            <h1>At InvoSystems</h1>
+            <h6 class="subTitle">(Placeholder)</h6>
+        </div>
+
+        <!--Long list of projects-->
+        <div id="tech">
+            <h1 class="textProjects">Technology</h1>
+            <h5 class="subTitle">(Placeholder)</h5>
+        </div>
+        
+        <div id="BFSI">
+            <h1 class="textProjects">BFSI</h1>
+            <h5 class="subTitle">(Placeholder)</h5>
+        </div>
+
+        <div id="teleCom">
+            <h1 class="textProjects">Telecommunications</h1>
+            <h5 class="subTitle">(Placeholder)</h5>
+        </div>
+
+        <div id="sports">
+                <h1 class="textProjects">Sports</h1>
+                <h5 class="subTitle">(Placeholder)</h5>
+            </div>  
+    </div>
+
+    <div id="contact">
+            <!--Button that leads to the about us page-->
+            <h3>Are you interested yet?  
+                <button id="contactBtn"><a href="{{ url_for('aboutUs_page') }}" >Contact Us!</a></button> 
+                <button id="scrollTopProj">Scroll to top</button>
+            </h3>
+
+        </div>
+</div>
+{%endblock content%}
+
+<!--Script ot run the page goes here-->
+{%block script%}
+    <script src="{{url_for('static', filename = 'projects.js')}}""></script>
+{%endblock%}
