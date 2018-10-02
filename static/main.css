@@ -386,7 +386,7 @@ body {
 
 /* slide show display */
 #projectDisplay {
-    background: #242222;
+    background: #3b3232;
     grid-column: 1/-1;
     border: 2px solid white;
 }

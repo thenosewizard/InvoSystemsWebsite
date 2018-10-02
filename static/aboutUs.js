@@ -1,27 +1,25 @@
 
+// JQuery function which makes the page fade
 $(document).ready( function () {
     $('#wholeAbout').fadeIn(1100);
 })
 
-// Chuck of code to change text 
+// Selecting all elements which have the same class, this returns an array
 let titles = document.querySelectorAll(".textClass")
 let texts = document.querySelectorAll(".innerAbout")
 
-// allowing us to add event listeners to every element
+// allowing us to add event listeners to every element using loops
 for (let i = 0; i < titles.length; i++) {
     titles[i].addEventListener("click", titleOnClick);
+    texts[i].addEventListener("click", textOnClick);
 }
 
-for (let i = 0; i < titles.length; i++) {
-    texts[i].addEventListener("click", textOnClick);
-}   
-
-// Text to be inputted onto the page
+// Text to be inputted onto the page (find some other way to remove the text from js)
 var headings = ["Management", "Business Model", "About InvoSystems", "Contact Us"]
 var paraTexts = [ "InvoSystems is owned and managed by Singaporeans with vast  experience  \
-of  more than 3 decades of experience in APAC covering from Korea to Australia.\
-Invosystems works closely with some exclusive local partners in the region  with strong business relationship  \
-and commitment to offer wide ranges of services and delivery in the region" ,
+            of  more than 3 decades of experience in APAC covering from Korea to Australia.\
+            Invosystems works closely with some exclusive local partners in the region  with strong business relationship  \
+            and commitment to offer wide ranges of services and delivery in the region" ,
         
             "InvoSystems business model is created around few categories of offerings for its Customers & Partners. \
             These includes: \
@@ -57,24 +55,30 @@ and commitment to offer wide ranges of services and delivery in the region" ,
             </ul> "     
         ];
 
-// Function to change the texts
+// Function to change the title
 function titleOnClick () {
+
     // get id of the title
     let thisTitle = this.getAttribute("id")
     let innerText = document.getElementById("text" + thisTitle);
+
         if (this.innerHTML != "") {
-        // We make the title disappear
-        this.innerHTML = "";
-        innerText.innerHTML = paraTexts[parseInt(thisTitle)];
-        // We then add the text into the box
-    } else {
-        thisTitle.innerHTML = headings[parseInt(thisTitle)];
-        innerText.innerHTML = "";
-    }
+
+            // We make the title disappear
+            this.innerHTML = "";
+
+            // We then add the text into the box, parseInt is used to change to string to a number
+            innerText.innerHTML = paraTexts[parseInt(thisTitle)];
+        }
 }
 
+// function to change the texts
 function textOnClick () {
+
+    // getting id of text
     let thisText = this.getAttribute("id")
+
+    // getting the id of the respective header
     let thistextTitleId = thisText[4];
     let titleIn = document.getElementById(parseInt(thistextTitleId))
 
