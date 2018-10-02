@@ -13,8 +13,8 @@ for (let i = 0; i < titles.length; i++) {
 }
 
 for (let i = 0; i < titles.length; i++) {
-    texts[i].addEventListener("click", titleOnClick);
-}
+    texts[i].addEventListener("click", textOnClick);
+}   
 
 // Text to be inputted onto the page
 var headings = ["Management", "Business Model", "About InvoSystems", "Contact Us"]
@@ -61,20 +61,28 @@ and commitment to offer wide ranges of services and delivery in the region" ,
 function titleOnClick () {
     // get id of the title
     let thisTitle = this.getAttribute("id")
-    let textmate = document.getElementById("text" + thisTitle);
-    if (this.innerHTML != "") {
+    let innerText = document.getElementById("text" + thisTitle);
+        if (this.innerHTML != "") {
         // We make the title disappear
         this.innerHTML = "";
-        textmate.innerHTML = paraTexts[parseInt(thisTitle)];
+        innerText.innerHTML = paraTexts[parseInt(thisTitle)];
         // We then add the text into the box
     } else {
         thisTitle.innerHTML = headings[parseInt(thisTitle)];
-        textmate.innerHTML = "";
+        innerText.innerHTML = "";
     }
 }
 
+function textOnClick () {
+    let thisText = this.getAttribute("id")
+    let thistextTitleId = thisText[4];
+    let titleIn = document.getElementById(parseInt(thistextTitleId))
 
-
+    if (thisText.innerHTML != "") {
+        this.innerHTML = "";
+        titleIn.innerHTML = headings[parseInt(thistextTitleId)];
+    }
+}
 
 
 
