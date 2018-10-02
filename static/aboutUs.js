@@ -3,30 +3,25 @@ $(document).ready( function () {
     $('#wholeAbout').fadeIn(1100);
 })
 
-
 // Chuck of code to change text 
-title1 = document.getElementById("aboutTitleOne");
-text1 = document.getElementById("textOne");
+let titles = document.querySelectorAll(".textClass")
+let texts = document.querySelectorAll(".innerAbout")
 
-title2 = document.getElementById("aboutTitleTwo");
-text2 = document.getElementById("textTwo");
+// allowing us to add event listeners to every element
+for (let i = 0; i < titles.length; i++) {
+    titles[i].addEventListener("click", titleOnClick);
+}
 
-title3 = document.getElementById("aboutTitleThree");
-text3 = document.getElementById("textThree");
-
-title4 = document.getElementById("aboutTitleFour");
-text4 = document.getElementById("textFour");
-
-// grouping them together
-titles = [title1, title2, title3, title4];
-texts = [text1, text2, text3, text4];
+for (let i = 0; i < titles.length; i++) {
+    texts[i].addEventListener("click", titleOnClick);
+}
 
 // Text to be inputted onto the page
-headings = ["Management", "Business Model", "About InvoSystems", "Contact Us"]
-paraTexts = [ "InvoSystems is owned and managed by Singaporeans with vast  experience  \
+var headings = ["Management", "Business Model", "About InvoSystems", "Contact Us"]
+var paraTexts = [ "InvoSystems is owned and managed by Singaporeans with vast  experience  \
 of  more than 3 decades of experience in APAC covering from Korea to Australia.\
-            Invosystems works closely with some exclusive local partners in the region  with strong business relationship  \
-            and commitment to offer wide ranges of services and delivery in the region" ,
+Invosystems works closely with some exclusive local partners in the region  with strong business relationship  \
+and commitment to offer wide ranges of services and delivery in the region" ,
         
             "InvoSystems business model is created around few categories of offerings for its Customers & Partners. \
             These includes: \
@@ -62,62 +57,42 @@ of  more than 3 decades of experience in APAC covering from Korea to Australia.\
             </ul> "     
         ];
 
-
 // Function to change the texts
 function titleOnClick () {
-        if (titles[0].innerHTML != "") {
-            titles[0].innerHTML = "";
-            texts[0].innerHTML = paraTexts[0]
-        } else {
-            titles[0].innerHTML = headings[0];
-            texts[0].innerHTML =  "";
-        }
-};
-
-function titleOnClick1 () {
-        if (titles[1].innerHTML != "") {
-            titles[1].innerHTML = "";
-            texts[1].innerHTML = paraTexts[1]
-        } else {
-            titles[1].innerHTML = headings[1];
-            texts[1].innerHTML =  "";
-        }
-};
-
-function titleOnClick2 () {
-        if (titles[2].innerHTML != "") {
-            titles[2].innerHTML = "";
-            texts[2].innerHTML = paraTexts[2]
-        } else {
-            titles[2].innerHTML = headings[2];
-            texts[2].innerHTML =  "";
-        }
-};
-
-function titleOnClick3 () {
-
-    if (titles[3].innerHTML != "") {
-        titles[3].innerHTML = "";
-        texts[3].innerHTML = paraTexts[3]
+    // get id of the title
+    let thisTitle = this.getAttribute("id")
+    let textmate = document.getElementById("text" + thisTitle);
+    if (this.innerHTML != "") {
+        // We make the title disappear
+        this.innerHTML = "";
+        textmate.innerHTML = paraTexts[parseInt(thisTitle)];
+        // We then add the text into the box
     } else {
-        titles[3].innerHTML = headings[3];
-        texts[3].innerHTML =  "";
-    }   
-};
+        thisTitle.innerHTML = headings[parseInt(thisTitle)];
+        textmate.innerHTML = "";
+    }
+}
 
-    
-// Event listeners
-titles[0].addEventListener('click', titleOnClick);
-texts[0].addEventListener('click', titleOnClick);
 
-titles[1].addEventListener('click', titleOnClick1);
-texts[1].addEventListener('click', titleOnClick1);
 
-titles[2].addEventListener('click', titleOnClick2);
-texts[2].addEventListener('click', titleOnClick2);
 
-titles[3].addEventListener('click', titleOnClick3);
-texts[3].addEventListener('click', titleOnClick3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Scroll towards the top of the page func
 $(document).ready( function () {
