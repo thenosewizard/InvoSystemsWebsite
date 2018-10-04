@@ -18,7 +18,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     position: relative;
-    background-color: #1F487E;
+    background-color:  #1F487E;
 }
 
 /* For navigation bar (Whole Website)*/
@@ -448,9 +448,10 @@ body {
 }
 
 .textProjects {
-    text-align: center;
-    font-size: 4em;
-    margin-top: 12%;
+    text-align: left;
+    font-size: 3em;
+    margin-top: 1%;
+    padding: 3%;
 }
 
 /* start of css for aboutUs page */
