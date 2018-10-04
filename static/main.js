@@ -18,7 +18,7 @@ function imgChanger() {
     setTimeout("imgChanger()", 3000);
 }
 
-// function that loops through text
+/* function that loops through text
 let f = 0;
 document.addEventListener("DOMContentLoaded", textChanger);
 
@@ -35,4 +35,4 @@ function textChanger() {
     setTimeout("textChanger()", 3000);
 }
 
-
+*/

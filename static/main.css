@@ -11,6 +11,8 @@
     zoom: 1;
 }
 
+
+
 /* start of code for the layout page */
 /* Body of the webpage */  
 body {
@@ -19,7 +21,7 @@ body {
     margin: 0;
     position: relative;
    /* background-color: #f8f8ff; */
-    background:  rgb(255, 255, 255)
+    background:  rgb(255, 255, 255);
 }
 
 /* For navigation bar (Whole Website)*/
@@ -35,12 +37,12 @@ body {
     margin: 0;  
 }
 
-.nav > li {
+.nav > #innerNav > li {
     line-height: 40px;
     display: inline-block;
 }
 
-.nav > li > a {
+.nav > #innerNav > li > a {
     text-decoration: none;
     color: #ffffff; 
     padding: 32px 25px;
@@ -48,11 +50,11 @@ body {
     
 }
 
-.nav > li > a:hover {
+.nav  > #innerNav > li > a:hover {
     background-color: rgb(100, 89, 89);
 }
 
-.nav > li > a:active {
+.nav > #innerNav  > li > a:active {
     background-color: rgb(67, 176, 184);
 }
 
@@ -65,7 +67,13 @@ body {
     color: #ffffff;
 }
 
-
+#hamburger {
+    float: right;
+    margin-top: 10px; 
+    padding-right:60px;
+    font-size: 1.4em;
+    display: none;
+}
 
 /* Start of code for the home page */
 /* Giant image under the nav bar (HOME page) */
@@ -184,9 +192,12 @@ body {
 /* Content below the snav*/
 #homeContent {
     display: grid;
-    grid-template-columns: 3fr 3fr;
+    grid-template-columns: repeat(2, 3fr);
+    object-fit: cover;
     grid-auto-rows: minmax(400px,auto); 
 }
+
+
 
 /* Text within the boxes*/
 .homeText {
@@ -507,7 +518,59 @@ body {
 
 
 
-/* For mobile view */
-@media screen {
+/* FOR MOBILE */
+@media screen and (max-width: 964px) {
+
+    /* Layout page*/
     
+    
+
+    
+    /* image in the home page (Start of home page)*/
+    #imageChange {
+        height: 400px;
+    }
+
+    #content {
+        font-size: 30px;
+        top: 20%;
+    }
+    
+    #innerNav {
+        display: none;
+    }
+
+    #sNav {
+        display: none;
+    }
+
+    #hamburger {
+        float: right;
+        margin-top: 10px; 
+        padding-right:60px;
+        font-size: 1.4em;
+        display: block;
+    }
+
+    #homeContent {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        object-fit: cover;
+        grid-auto-rows: minmax(400px,auto); 
+    }
+
+    #contact > h3 > span {
+        display: none;
+    }
+
+    #contactBtn {
+        float: left;
+        margin-left: 3%;
+
+    }
+
+    #scrollTop {
+        float: right;
+    }
 }
+
