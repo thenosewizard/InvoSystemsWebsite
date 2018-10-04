@@ -29,31 +29,66 @@
             <h4 id="block">Blockchain</h4>
         </div>  
 
-        <!-- What InvoSystems specilaises in goes here-->
-        <div class="specialise">
-            
-            <!-- Title goes here-->
-            <div id="sTitle">
-                <h1 id="titleContent">Consulting</h1>
-                <!--Picture related to the title goes here-->
-                <div id="sPicture">
-                    <img name = "contentPicture" id="pictureContent" alt="Image" src= "..\static\926.png">
-                </div>
-            </div>
-            
-            <!--Content related to the title goes here-->
-            <div id="sContent">
+        <div id="homeContent">
 
-                <!--Buttons for the user to change whats on the browser-->
-                <div class="button" id="button-left" onclick="leftButton()"></div>
-                <div class="button" id="button-right" onclick= "rightButton()"></div>
-                
-                <h3><p id="paraContent">InvoSystems provides consulting, products, solutions, implementation and services related to 
-                Big Data, IoT, Analytics, eLearning, Blockchain, Digital Transformation,  
-                Information Search, Structured Knowledgebase,  eFAQ  and eServices Delivery support </p></h3>
+            <div id="conSultContent" class="homeText">
+                    <h1>Consulting</h1>
+                    <p>
+                        InvoSystems provides consulting, products, solutions, implementation and services
+                        related to Big Data, IoT, Analytics, eLearning, Blockchain, Digital Transformation, 
+                        Information Search, Structured Knowledgebase,  eFAQ  and eServices Delivery support
+                    </p>
             </div>
-            
+
+            <div id="proContent"  class="homeText">
+                <h1>Products</h1>
+                <p>Invosystems has built software products & portals focussing on eTraining & Certification, 
+                    Structured Knowledgebase,  eServices Delivery support, Information Search,
+                    eLearning & eTraining authoring tool. and eSales Management
+                </p>
             </div>
+
+            <div id="learnContent"  class="homeText">
+                <h1>E-learning/Training</h1>
+                <p>
+                    Invosystems offers services to Design, build, deliver eLearning & eTraining that encompass
+                     Instructional Design & Courseware development, Digitization of engineering & technical documents, 
+                     Build technical and non-technical knowledgebase
+                </p>
+            </div>
+
+            <div id="iotContent"  class="homeText">
+                <h1>IoT & Analytics</h1>
+                <p>
+                    InvoSystems provides Big Data, IoT implementation services like Use Cases based solutions,
+                     Design and Implementation services. InvoSystems undertakes services focussing on  Hadoop,
+                      ETL, MDM, Data Migration, ETL, Analytics and Managed Services
+                </p>
+            </div>
+
+            <div id="blockContent"  class="homeText">
+                <h1>Blockchain</h1>
+                <p>
+                    InvoSystems with its extensive experience in development,
+                     IoT, Cryptography, Big data, Cyber Security is embarking on Design,
+                      solutioning, Use Cases, BaaS and POC for Blockchain based applications & Services
+                </p>
+            </div>
+
+            <div id="adverContent"  class="homeText">
+                <h1>Advertisment</h1>
+            </div>
+        </div>
+        
+        <div id="contact">
+                <!--Button that leads to the about us page-->
+                <h3>Are you interested yet?  
+                    <button id="contactBtn"><a href="{{ url_for('aboutUs_page') }}" >Contact Us!</a></button> 
+                    <button id="scrollTop">Scroll to top</button>
+                </h3>
+    
+            </div>
+        
         
 
 
