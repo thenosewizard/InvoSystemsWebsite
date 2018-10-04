@@ -65,17 +65,7 @@ body {
     color: #ffffff;
 }
 
-/* For the footer to be positioned at the bottom*/
-.main-footer {
-    position: absolute;
-    color: #ffffff;
-    height: 20px;
-    background-color: #38393b91; 
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-/* End of code for the layout page */
+
 
 /* Start of code for the home page */
 /* Giant image under the nav bar (HOME page) */
@@ -185,7 +175,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 0;
     margin: 0;
-    grid-auto-rows: minmax(0.2%, 0.2%);
+    grid-auto-rows: minmax(0.2%, auto);
     text-align: center;
     color: #aaa4a4;
     background: #242222;
@@ -195,14 +185,12 @@ body {
 #homeContent {
     display: grid;
     grid-template-columns: 3fr 3fr;
-    grid-auto-rows: minmax(400px,auto);
-
-    
+    grid-auto-rows: minmax(400px,auto); 
 }
 
 /* Text within the boxes*/
 .homeText {
-    color: whitesmoke;
+    color: rgb(54, 174, 221);
     padding: 20px;
     border: 3px solid burlywood;
 }
@@ -210,18 +198,15 @@ body {
 .homeText > h1 {
     margin-top: 10%;
     font-weight: bold;
+
 }
 
 .homeText > p {
     font-weight: bold;
-    font-size: 1em;
-    color: #ffffff;
+    font-size: 1.1em;
+    color: #bcbe9e;
     line-height: 1.7em;
     float: right;
-}
-
-#homeImg {
-
 }
 
 /* sections in the home page */
@@ -241,11 +226,13 @@ body {
 }
 
 #iotContent {
-    background: #3b3232 ;
+    background: rgb(88, 77, 32) url('.\\internet.jpeg');
+    background-repeat: no-repeat;
 }
 
 #blockContent {
-    background: #204174;
+    background: rgb(190, 174, 106) url('.\\blockchain.jpeg');
+    background-repeat: no-repeat;
 }
 
 #adverContent {
@@ -253,10 +240,8 @@ body {
 }
 
 
-
-/* End of code for the home page */
-
 /* Start of CSS for bigData page */
+
 /* Sections in the css page */
 .sections_Data {
     color: #ffffff;
@@ -311,8 +296,9 @@ body {
     display: grid;
     text-align: center;
     grid-auto-rows:minmax(60px,auto);
+    width: 100%;
     color: #ffffff;
-    background: #242222 ;
+    background: #242222;
 }
 
 /* The btn in contact us */
