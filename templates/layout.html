@@ -25,16 +25,19 @@
         <!--scrollTo id is used to allow user to scroll towards the top of the page-->
         <ul class="nav" id="scrollTo">
             <div class="logo">InvoSystems</div>
-            <div id="innerNav">
-                <li><a href="{{ url_for('home_page') }}">Home</a></li>
-                <li><a href="{{ url_for('bigdata_page') }}">Big Data</a></li>
-                <li><a href="{{ url_for('service_page') }}">Services</a></li>
-                <li><a href="{{ url_for('products_page') }}">Products</a></li>
-                <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
-                <li><a href="{{ url_for('aboutUs_page') }}">About Us</a></li>
-            </div>
             <div id="hamburger">
                 <i class="fa fa-bars"></i>
+            </div>
+
+            <div id="wholeNav">
+                <div id="innerNav">
+                    <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                    <li><a href="{{ url_for('bigdata_page') }}">Big Data</a></li>
+                    <li><a href="{{ url_for('service_page') }}">Services</a></li>
+                    <li><a href="{{ url_for('products_page') }}">Products</a></li>
+                    <li><a href="{{ url_for('projects_page') }}">Projects</a></li>
+                    <li><a href="{{ url_for('aboutUs_page') }}">About Us</a></li>
+                </div>
             </div>
         </ul>
     </nav>
@@ -50,7 +53,7 @@
     
     <!--Script to run JQuery in the webpage-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+    <script src="{{url_for('static', filename = 'main.js')}}""></script>
     <!--Script to run JS in the webpage-->   
     {%block script%}{%endblock%}
 </body>
