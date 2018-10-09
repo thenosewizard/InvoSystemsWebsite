@@ -1,5 +1,5 @@
 // slideshow transitions for (HOME PAGE)
-// function to go through the images
+// function to go through the images/image*
 let  currentImg = 0;
 document.addEventListener("DOMContentLoaded", imgChanger);
 
@@ -33,9 +33,3 @@ function textChanger() {
     setTimeout("textChanger()", 3000);
 }
 
-// Function to toggle menu in mobile view
-$(document).ready(function () {
-    $('#hamburger').on('click', function () {
-        $('#wholeNav').toggle();
-    })
-})

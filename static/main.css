@@ -21,7 +21,7 @@ body {
     margin: 0;
     position: relative;
    /* background-color: #f8f8ff; */
-    background:  rgb(255, 255, 255);
+    background:  #1F2833 ;
 }
 
 /* For navigation bar (Whole Website)*/
@@ -247,7 +247,6 @@ body {
 
 
 /* Start of CSS for bigData page */
-
 #wholeSection {
     display: none;
 }
@@ -359,7 +358,7 @@ body {
 #projectDisplay {
     background: #3b3232;
     grid-column: 1/-1;
-    border: 2px solid white;
+    border: 2px solid darkcyan;
 }
 
 
