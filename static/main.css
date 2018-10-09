@@ -36,12 +36,12 @@ body {
     margin: 0;  
 }
 
-.nav > #wholeNav > #innerNav > li {
+#innerNav > li {
     line-height: 40px;
     display: inline-block;
 }
 
-.nav > #wholeNav > #innerNav > li > a {
+#innerNav > li > a {
     text-decoration: none;
     color: #ffffff; 
     padding: 32px 25px;
@@ -49,7 +49,7 @@ body {
     
 }
 
-.nav > #wholeNav  > #innerNav > li > a:hover {
+#innerNav > li > a:hover {
     background-color: rgb(100, 89, 89);
 }
 
@@ -72,7 +72,8 @@ body {
 }
 
 /* Start of code for the home page */
-/* Giant image under the nav bar (HOME page) */
+
+/* Image under the nav bar */
 .image {
     display: flex;
     align-items: center;
@@ -95,7 +96,7 @@ body {
      
 }
 
-/* animation for the content in the image */
+/* simple animation for the content in the image */
 @keyframes changeText {
     from {
         color: black;
@@ -105,7 +106,6 @@ body {
         color: #ffffff;
     }
 }
-
 
 #imageChange {
     background-position: center;
@@ -129,7 +129,6 @@ body {
 }
 
 /* For making grids in the website (HOME PAGE) */
-
 .grid {
     display: grid;
     grid-template-columns: 2fr 8fr;
@@ -249,7 +248,10 @@ body {
 
 /* Start of CSS for bigData page */
 
-/* Sections in the css page */
+#wholeSection {
+    display: none;
+}
+
 .sections_Data {
     color: #ffffff;
     padding: 2em;   
@@ -261,10 +263,6 @@ body {
     margin-bottom: 8%;  
 }
 
-/* The entire section of the bigdata page */
-#wholeSection {
-    display: none;
-}
 
 #bigDataSection, #serviceSection {
     display: grid;
@@ -298,7 +296,6 @@ body {
 
 
 /*contact us */
-
 #contact {
     display: grid;
     text-align: center;

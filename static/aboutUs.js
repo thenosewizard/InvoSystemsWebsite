@@ -14,8 +14,9 @@ for (let i = 0; i < titles.length; i++) {
     texts[i].addEventListener("click", textOnClick);
 }
 
-// Text to be inputted onto the page (find some other way to remove the text from js)
+// Text to be inputted onto the page (find some other way to remove the text from js [impt])
 var headings = ["Management", "Business Model", "About InvoSystems", "Contact Us"]
+
 var paraTexts = [ "InvoSystems is owned and managed by Singaporeans with vast  experience  \
             of  more than 3 decades of experience in APAC covering from Korea to Australia.\
             Invosystems works closely with some exclusive local partners in the region  with strong business relationship  \
