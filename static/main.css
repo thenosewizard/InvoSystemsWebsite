@@ -26,8 +26,7 @@ body {
 
 /* For navigation bar (Whole Website)*/
 .nav {
-    background-color: rgb(52, 196, 184);
-   /* background-color: #4E9EED; */
+   background-color: #4E9EED; 
     color:#ffffff;
     font-weight: bold;
     list-style: none;
@@ -150,7 +149,7 @@ body {
 } 
 
  .grid .head {
-    background-color: rgb(52, 196, 184);
+    background-color: #4E9EED;
     grid-column: 1/-1;
     margin-bottom: 0%; 
     text-align: center;
@@ -198,9 +197,9 @@ body {
 
 /* Text within the boxes*/
 .homeText {
-    color: rgb(54, 174, 221);
+    color: rgb(54, 196, 221);
     padding: 20px;
-    border: 3px solid burlywood;
+    border: 3px solid rgb(21, 55, 90);
 }
 
 .homeText > h1 {
@@ -212,34 +211,34 @@ body {
 .homeText > p {
     font-weight: bold;
     font-size: 1.1em;
-    color: #bcbe9e;
+    color: #ffffff;
     line-height: 1.7em;
     float: right;
 }
 
 /* sections in the home page */
 #consultContent {
-    background: #000 url('.\\consult.jpeg');
+    background: #000 url('.\\images\\consult.jpeg');
     background-repeat: no-repeat;
 }
 
 #proContent {
-    background: #EDDEA4 url('.\\products.jpeg');
+    background: #EDDEA4 url('.\\images\\products.jpeg');
     background-repeat: no-repeat;
 }
 
 #learnContent {
-    background: #EDDEA4 url('.\\learning.jpeg');
+    background: #EDDEA4 url('.\\images\\learning.jpeg');
     background-repeat: no-repeat;
 }
 
 #iotContent {
-    background: rgb(88, 77, 32) url('.\\internet.jpeg');
+    background: rgb(88, 77, 32) url('.\\images\\internet.jpeg');
     background-repeat: no-repeat;
 }
 
 #blockContent {
-    background: rgb(190, 174, 106) url('.\\blockchain.jpeg');
+    background: rgb(190, 174, 106) url('.\\images\\blockchain.jpeg');
     background-repeat: no-repeat;
 }
 
@@ -341,8 +340,6 @@ body {
 }
 
 /* Start of css for services page */
-
-
 .strongClass {
     font-size: 1.2em;
 
@@ -350,9 +347,6 @@ body {
 
 
 /* start of css for Projects page */
-
-
-
 #projectSection {
     display: grid;
     grid-template-columns: 3fr;

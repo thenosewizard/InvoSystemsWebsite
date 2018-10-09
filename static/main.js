@@ -6,7 +6,7 @@ let  currentImg = 0;
 document.addEventListener("DOMContentLoaded", imgChanger);
 
 function imgChanger() {
-    let image = ['..\\static\\table.jpeg'];
+    let image = ['..\\static\\images\\table.jpeg'];
     document.picture.src = image[currentImg]
 
     if (currentImg < image.length - 1) {
@@ -18,7 +18,7 @@ function imgChanger() {
     setTimeout("imgChanger()", 3000);
 }
 
-/* function that loops through text
+// function that loops through text
 let f = 0;
 document.addEventListener("DOMContentLoaded", textChanger);
 
@@ -34,8 +34,6 @@ function textChanger() {
 
     setTimeout("textChanger()", 3000);
 }
-
-*/
 
 $(document).ready(function () {
     $('#hamburger').on('click', function () {
